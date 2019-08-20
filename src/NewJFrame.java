@@ -73,7 +73,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActionPerformed
         String dato=texto.getText();
         String[] nombres=new String[50];
-        label.setText(dato);
+        label.setText(dato+",");
         nombres[contadorNombres]=dato;
         contadorNombres++;
         String contenidoCompleto="";
@@ -81,7 +81,7 @@ public class NewJFrame extends javax.swing.JFrame {
         for (String nombresSeparados : nombres){
         if (nombresSeparados != null){
              contenidoCompleto=
-                label.getText()+nombresSeparados+" ";
+                label.getText()+nombresSeparados+"";
           
 //        label.setText(dato);
 //        lista.removeAll();
